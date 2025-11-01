@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>F1 Driver Resume — Your Name</title>
-  <img src="image1.jpg.JPEG" alt="My picture" width="200">
+  <title>F1 Driver Resume — Temuulen Nyambayar</title>
   <meta name="description" content="Resume / CV of a Formula 1 driver" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -15,10 +14,12 @@
     *{box-sizing:border-box}
     body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071024 0%, #081026 60%); color:var(--paper); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
 
-    .container{max-width:900px; margin:40px auto; padding:28px; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border-radius:16px; box-shadow:0 10px 30px rgba(2,6,23,0.7);}
+    .container{max-width:900px; margin:40px auto; padding:28px; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border-radius:16px; box-shadow:0 10px 30px rgba(2,6,23,0.7); position:relative;}
 
-    header{display:flex; gap:20px; align-items:center}
-    .photo{width:120px; height:120px; border-radius:12px; background:linear-gradient(135deg,var(--glass), rgba(255,255,255,0.02)); display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.06);}
+    .student-id{position:absolute; top:16px; left:16px; background:rgba(255,255,255,0.08); padding:8px 14px; border-radius:8px; font-weight:600; font-size:13px; border:1px solid rgba(255,255,255,0.1);}
+
+    header{display:flex; gap:20px; align-items:center; margin-top:30px;}
+    .photo{width:120px; height:120px; border-radius:12px; background:linear-gradient(135deg,var(--glass), rgba(255,255,255,0.02)); display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.06); overflow:hidden;}
     .photo img{width:100%; height:100%; object-fit:cover; border-radius:10px}
 
     h1{font-size:26px; margin:0 0 4px 0; font-weight:700}
@@ -53,7 +54,6 @@
 
     footer{margin-top:18px; display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:13px}
 
-    /* Print-friendly */
     @media print{
       body{background:white;color:var(--text-dark)}
       .container{box-shadow:none; background:white}
@@ -61,50 +61,49 @@
       a[href]:after{content: " (" attr(href) ")"}
     }
 
-    /* Responsive */
     @media (max-width:840px){
       .grid{grid-template-columns:1fr;}
       .contact{text-align:left;margin-left:0}
+      header{flex-direction:column; align-items:flex-start;}
     }
   </style>
 </head>
 <body>
   <div class="container" role="main">
+    <div class="student-id">Student ID: 114035127</div>
+    
     <header>
       <div class="photo" aria-hidden="true">
-  <!-- Replace src with your portrait -->
-  <img src="image1.jpg.JPEG" alt="Temuulen Nyambayar photo" style="width: 120px; height: 120px; border-radius: 12px; object-fit: cover;">
+        <img src="image1.jpg.JPEG" alt="Temuulen Nyambayar photo">
       </div>
       <div>
-        <h1>YOUR NAME</h1>
+        <h1>Temuulen Nyambayar</h1>
         <div class="sub">Professional Formula 1 Driver • Race Winner • Pole Positions</div>
-        <div style="margin-top:8px; display:flex; gap:8px; align-items:center;">
+        <div style="margin-top:8px; display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
           <div class="chip">Super Licence</div>
-          <div class="chip">Nationality: Country</div>
-          <div class="chip">Date of birth: YYYY-MM-DD</div>
+          <div class="chip">Nationality: Mongolia</div>
+          <div class="chip">Date of birth: 1998-05-15</div>
         </div>
       </div>
 
       <div class="contact">
-        <p><strong>Email:</strong> youremail@example.com</p>
-        <p><strong>Phone:</strong> +1 555 012 3456</p>
-        <p><strong>Location:</strong> City, Country</p>
-        <p><strong>GitHub:</strong> github.com/yourusername</p>
+        <p><strong>Email:</strong> 114035127@live.asia.edu.tw</p>
+        <p><strong>GitHub:</strong> github.com/temuulen-n</p>
       </div>
     </header>
 
     <div class="meta">
       <div class="card" style="flex:1">
         <div class="section-title"><h2>Profile</h2><small>Racing summary</small></div>
-        <p class="summary">Aggressive, consistent Formula 1 driver with X seasons of experience, known for rapid tyre management, qualifying pace, and racecraft in mixed conditions. Strong technical feedback to engineers and proven ability to bring the car home under pressure. Looking for a competitive seat to fight for championships.</p>
+        <p class="summary">Aggressive, consistent Formula 1 driver with 5 seasons of experience, known for exceptional tyre management, qualifying pace, and racecraft in mixed conditions. Strong technical feedback to engineers and proven ability to bring the car home under pressure. Looking for a competitive seat to fight for championships and represent Mongolia on the world stage.</p>
       </div>
       <div class="card" style="width:320px; display:flex; flex-direction:column; gap:12px">
         <div>
           <div class="section-title"><h2>Key Stats</h2></div>
           <div class="stat-row">
-            <div class="stat"><h3>Wins</h3><p>12</p></div>
-            <div class="stat"><h3>Poles</h3><p>9</p></div>
-            <div class="stat"><h3>Podiums</h3><p>35</p></div>
+            <div class="stat"><h3>15</h3><p>Wins</p></div>
+            <div class="stat"><h3>12</h3><p>Poles</p></div>
+            <div class="stat"><h3>42</h3><p>Podiums</p></div>
           </div>
         </div>
 
@@ -130,33 +129,45 @@
           <ul class="record-list">
             <li class="record-item">
               <div>
-                <strong>2024 — Team Name</strong>
-                <div class="sub">Car #XX — Formula 1 World Championship</div>
+                <strong>2024 — Scuderia AlphaTauri</strong>
+                <div class="sub">Car #14 — Formula 1 World Championship</div>
               </div>
               <div style="text-align:right">
-                <div>Position: 5th</div>
-                <div>Points: 184</div>
+                <div>Position: 4th</div>
+                <div>Points: 212</div>
               </div>
             </li>
 
             <li class="record-item">
               <div>
-                <strong>2023 — Team Name</strong>
-                <div class="sub">Car #XX — Formula 1 World Championship</div>
+                <strong>2023 — Scuderia AlphaTauri</strong>
+                <div class="sub">Car #14 — Formula 1 World Championship</div>
               </div>
               <div style="text-align:right">
-                <div>Position: 8th</div>
-                <div>Points: 96</div>
+                <div>Position: 7th</div>
+                <div>Points: 118</div>
               </div>
             </li>
 
             <li class="record-item">
               <div>
-                <strong>2022 — Junior Series</strong>
-                <div class="sub">F2 / F3 / Karting highlights</div>
+                <strong>2022 — Carlin Racing</strong>
+                <div class="sub">FIA Formula 2 Championship</div>
               </div>
               <div style="text-align:right">
-                <div>Champion / Runner-up / Wins</div>
+                <div>Champion</div>
+                <div>8 Wins, 14 Podiums</div>
+              </div>
+            </li>
+
+            <li class="record-item">
+              <div>
+                <strong>2021 — Prema Racing</strong>
+                <div class="sub">FIA Formula 3 Championship</div>
+              </div>
+              <div style="text-align:right">
+                <div>Runner-up</div>
+                <div>5 Wins, 11 Podiums</div>
               </div>
             </li>
           </ul>
@@ -164,29 +175,39 @@
 
         <section class="card" style="margin-top:18px">
           <div class="section-title"><h2>Career Highlights</h2><small>Notable achievements</small></div>
-          <ol style="margin:0 0 0 18px; color:rgba(255,255,255,0.95)">
-            <li>Race win — Grand Prix name, Year — Race summary (e.g., recovered from P16 to P1 in wet conditions)</li>
-            <li>Pole position — Grand Prix name, Year — Qualifying lap details</li>
-            <li>Fastest lap — Grand Prix name, Year</li>
-            <li>Rookie of the Year — Championship, Year</li>
+          <ol style="margin:0 0 0 18px; color:rgba(255,255,255,0.95); line-height:1.7;">
+            <li><strong>Monaco Grand Prix Victory, 2024</strong> — First Mongolian driver to win at Monaco, recovered from P8 to P1 in challenging wet-to-dry conditions with strategic tyre management</li>
+            <li><strong>Japanese Grand Prix Pole Position, 2024</strong> — Set track record at Suzuka with a qualifying lap 0.342s faster than previous pole time</li>
+            <li><strong>Singapore Grand Prix Victory, 2023</strong> — Breakthrough maiden F1 win, led from P3 on the grid through perfect race strategy and overtaking prowess</li>
+            <li><strong>FIA Formula 2 Champion, 2022</strong> — Dominated the championship with 8 race wins and 14 podium finishes</li>
+            <li><strong>Fastest Lap Record, 2024</strong> — Set fastest laps at 6 different circuits throughout the season</li>
           </ol>
         </section>
 
         <section class="card" style="margin-top:18px">
           <div class="section-title"><h2>Experience</h2><small>Teams & roles</small></div>
-          <div style="margin-top:8px">
-            <strong>2021–2024 — F1 Team Name — Race Driver</strong>
-            <p class="sub">Responsibilities: Race weekends, simulator development, car setup direction, media appearances, sponsor engagements.</p>
+          <div style="margin-top:8px; line-height:1.6;">
+            <strong>2022–2024 — Scuderia AlphaTauri — Formula 1 Race Driver</strong>
+            <p class="sub">Responsibilities: Race weekends across all 24 Grand Prix, extensive simulator development work, car setup direction and feedback, media appearances and interviews, sponsor engagements and brand ambassador activities. Key achievement: Elevated team to consistent points-scoring positions and secured two race victories.</p>
 
-            <strong style="display:block; margin-top:10px">2019–2020 — F2 Team Name — Race Driver</strong>
-            <p class="sub">Key outcomes: Multiple podiums and development feedback leading to promotion to F1.</p>
+            <strong style="display:block; margin-top:14px">2022 — Carlin Racing — F2 Championship Winner</strong>
+            <p class="sub">Key outcomes: Clinched the F2 Championship title with 8 victories, 14 podiums, and 4 pole positions. Provided crucial technical feedback that improved car performance throughout the season, leading to direct promotion to Formula 1.</p>
+
+            <strong style="display:block; margin-top:14px">2021 — Prema Racing — F3 Race Driver</strong>
+            <p class="sub">Key outcomes: Finished as championship runner-up with 5 wins and 11 podiums in rookie season. Demonstrated consistent speed and racecraft that caught attention of F2 teams.</p>
+
+            <strong style="display:block; margin-top:14px">2019–2020 — Red Bull Junior Team — Development Driver</strong>
+            <p class="sub">Extensive simulator work for Red Bull Racing F1 team, providing developmental feedback and correlation data for race weekends.</p>
           </div>
         </section>
 
         <section class="card" style="margin-top:18px">
           <div class="section-title"><h2>Education & Licences</h2><small>Formal education & licenses</small></div>
-          <p class="sub">BSc in Motorsport Engineering — University Name (Year)</p>
-          <p class="sub">FIA Super Licence — Issued: YYYY</p>
+          <div style="line-height:1.6;">
+            <p class="sub"><strong>BSc in Motorsport Engineering</strong> — Asia University, Taiwan (2020)</p>
+            <p class="sub"><strong>FIA Super Licence</strong> — Issued: 2022 (Current holder with 40+ points)</p>
+            <p class="sub"><strong>Advanced Racing Certifications</strong> — High-performance driving, race engineering fundamentals, data analysis</p>
+          </div>
         </section>
 
       </div>
@@ -194,34 +215,46 @@
       <aside>
         <div class="card">
           <div class="section-title"><h2>Technical Feedback</h2><small>What I bring to engineers</small></div>
-          <ul style="margin:0 0 0 18px; color:rgba(255,255,255,0.95)">
-            <li>Tyre degradation patterns across compounds</li>
-            <li>Balance changes under fuel load shifts</li>
-            <li>Setup windows for wet→dry transitions</li>
-            <li>Simulator correlation & lap-by-lap notes</li>
+          <ul style="margin:0 0 0 18px; color:rgba(255,255,255,0.95); line-height:1.6;">
+            <li>Detailed tyre degradation patterns across all compounds and temperature ranges</li>
+            <li>Balance changes under fuel load shifts throughout race distance</li>
+            <li>Setup windows for wet→dry transitions and changing track conditions</li>
+            <li>Simulator correlation accuracy with lap-by-lap telemetry notes</li>
+            <li>Aerodynamic balance feedback for different wing configurations</li>
+            <li>Brake performance and thermal management insights</li>
           </ul>
         </div>
 
         <div class="card" style="margin-top:14px">
           <div class="section-title"><h2>Media & Sponsorship</h2><small>Engagement & experience</small></div>
-          <p class="sub">Experienced in TV interviews, press conferences, sponsor hospitality, social media campaigns (followers: X)</p>
+          <p class="sub">Highly experienced in TV interviews, FIA press conferences, sponsor hospitality events, and social media campaigns. Active presence across platforms with 850K+ followers. Strong ambassador for promoting motorsport in Asia and inspiring the next generation of Mongolian racers.</p>
         </div>
 
         <div class="card" style="margin-top:14px">
           <div class="section-title"><h2>Languages</h2></div>
-          <p class="sub">English (Fluent) • Country Language (Native) • Italian (Conversational)</p>
+          <div style="line-height:1.6;">
+            <p class="sub"><strong>Mongolian</strong> (Native)</p>
+            <p class="sub"><strong>English</strong> (Fluent)</p>
+            <p class="sub"><strong>Mandarin Chinese</strong> (Fluent)</p>
+            <p class="sub"><strong>Italian</strong> (Conversational)</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Personal Interests</h2></div>
+          <p class="sub">Fitness training, karting with youth programs, sim racing, promoting STEM education in Mongolia, mountain hiking, and supporting grassroots motorsport development in Asia.</p>
         </div>
 
         <div class="card" style="margin-top:14px">
           <div class="section-title"><h2>References</h2><small>Available on request</small></div>
-          <p class="sub">Team Principals, Engineers and Manager contacts available upon request.</p>
+          <p class="sub">Team Principals, Race Engineers, and Management contacts available upon request.</p>
         </div>
       </aside>
     </div>
 
     <footer>
-      <div>Last updated: YYYY-MM-DD</div>
-      <div>Portfolio / Highlights: github.com/yourusername • instagram.com/yourhandle</div>
+      <div>Last updated: November 1, 2025</div>
+      <div>Portfolio: github.com/temuulen-n</div>
     </footer>
   </div>
 </body>
